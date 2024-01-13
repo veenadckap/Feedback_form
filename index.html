@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300;1,500&family=Poppins:wght@600&family=Varela&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Feedback</title>
+</head>
+<body>
+    <center>
+        <h2>Feedback Form</h2>
+    </center>
+    <div id="maindiv">
+        <div id="container_1">
+            <div id="alert">
+                    <div id="text">
+                        <svg  id='icon'xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                            <path opacity="1" fill="#1E3050" d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>                     
+                               <h5 id="hd" class="">
+                                Invalid
+                                 </h5>
+                    </div>
+            </div>
+            <form name="Feedback_form">
+
+                <div>
+                    <input type="text" name="username" id="username" placeholder="Enter your name">
+                </div>
+                <div id="radiobuttons" name="feed">
+                    <div>
+                        <input type="radio" name="Feedback" id="Feed" value="General_Feedback">
+                        <label for="Feed">General Feedback</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="Feedback" id="technical" value="technical_issue">
+                        <label for="technical">Technical Issue</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="Feedback" id="data_isuse" value="data_lost_issue">
+                        <label for="data_isuse">Data Lost Issue</label>
+
+                    </div>
+                </div>
+                <div>
+                    <input type="email" name="mail" id="email_input" placeholder="you@gmail.com">
+                </div>
+                <div >
+                    <textarea name="information" id="description" placeholder="Enter your feedback briefly"></textarea>
+                </div>
+                <div>
+                    <input type="checkbox" id="term" name="terms">
+                    <label for="terms" >I accept the terms and conditions of this feedback form</label>
+                </div>
+                <div >
+                    <input type="submit" value="Submit" id="btn" name="button">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
